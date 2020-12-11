@@ -22,14 +22,22 @@ let popup = document.getElementById('val-popup');
 let input = document.getElementById('calc-input');
 let resultBtn = document.getElementById('calcBtn');
 
+let popupS = document.getElementById('val-popup1');
+let inputS = document.getElementById('calc-input1');
+let resultBtnS = document.getElementById('calcBtn1');
+
 input.addEventListener('click', function() {
     popup.classList.remove('closed')
+})
+
+inputS.addEventListener('click', function() {
+    popupS.classList.remove('closed')
 })
 
 document.addEventListener('click', e => {
     let target = e.target;
     let its_popup = target === popup || popup.contains(target) || target === input;
-    let its_btn = target === resultBtn;
+    let its_btn = target === resultBtn || target === resultBtnS;
     if (!its_popup) {
         popup.classList.add('closed');
     } else {
@@ -37,6 +45,17 @@ document.addEventListener('click', e => {
     }
     if (its_btn) {
         popup.classList.add('closed');
+    }
+
+    let its_popups = popupS.contains(target) || target === inputS || target === popupS;
+    let its_btns = target === resultBtnS;
+    if (!its_popups) {
+        popupS.classList.add('closed');
+    } else {
+        popupS.classList.remove('closed')
+    }
+    if (its_btns) {
+        popupS.classList.add('closed');
     }
 })
 
@@ -51,4 +70,17 @@ resultBtn.addEventListener('click', function(e) {
         result = Math.floor(result);
     }
     input.value = result;
+})
+
+let collectionOfsizesS = document.querySelectorAll('.value-calculate-input-s');
+let resultS = 0;
+
+resultBtnS.addEventListener('click', function(e) {
+    e.preventDefault();
+    resultS = collectionOfsizesS[0].value * collectionOfsizesS[1].value * collectionOfsizesS[2].value;
+    resultS = resultS.toFixed(2);
+    if (resultS % 2 === 0) {
+        resultS = Math.floor(resultS);
+    }
+    inputS.value = resultS;
 })

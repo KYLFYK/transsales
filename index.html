@@ -183,16 +183,16 @@
                     <span class="placeholder">Объем (м<sup>3</sup>)</span>
                     <img src="ico/volume-blue.svg" alt="" class="ico">
                     <div class="value-calculate closed" id="val-popup1">
-                        <input type="number" placeholder="Длина (м)" class="value-calculate-input">
-                        <input type="number" placeholder="Ширина (м)" class="value-calculate-input">
-                        <input type="number" placeholder="Высота (м)" class="value-calculate-input">
+                        <input type="number" placeholder="Длина (м)" class="value-calculate-input value-calculate-input-s">
+                        <input type="number" placeholder="Ширина (м)" class="value-calculate-input value-calculate-input-s">
+                        <input type="number" placeholder="Высота (м)" class="value-calculate-input value-calculate-input-s">
                         <a href="#" class="value-calculate-btn" id=calcBtn1>Вычислить объем</a>
                     </div>
                 </div>
             </div>
-            <div class="specs__btn">
-                <a href="#">Подобрать</a>
-            </div>
+            <a href="#" class="specs__btn">
+                <span>Подобрать</span>
+            </a>
             <div class="specs__list">
                 <div class="specs__list-item car">
                     <div class="from-to">
@@ -223,6 +223,98 @@
             </div>
         </div>
     </div>
+    <div class="find__wrapper">
+        <h2 class="title">
+            Поиск вашего груза
+        </h2>
+        <div class="find__block">
+            <div class="main__val-elem">
+                <input class="input" type="text" required>
+                <span class="placeholder">Введите номер вашего груза</span>
+            </div>
+            <button type="submit" class="find__btn">
+                <span class="ico"></span>
+                <span>Найти</span>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__main">
+            <div class="footer__main-about">
+                <div class="tab">
+                    <input id="tab-one" type="checkbox" name="tabs">
+                    <label for="tab-one">Страны</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Россия</li>
+                            <li class="tab-content-list-item">Испания</li>
+                            <li class="tab-content-list-item">Германия</li>
+                            <li class="tab-content-list-item">Казахстан</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-two" type="checkbox" name="tabs">
+                    <label for="tab-two">Сервисы</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Статус груза/заявки</li>
+                            <li class="tab-content-list-item">Сроки доставки</li>
+                            <li class="tab-content-list-item">Спецпредложения</li>
+                            <li class="tab-content-list-item">Расчет стоимости</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-three" type="checkbox" name="tabs">
+                    <label for="tab-three">Направления</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Москва - Симферополь</li>
+                            <li class="tab-content-list-item">Москва - Сочи</li>
+                            <li class="tab-content-list-item">Москва - Минеральные воды</li>
+                            <li class="tab-content-list-item">Санкт-Петербург - Москва</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-four" type="checkbox" name="tabs">
+                    <label for="tab-four">Города</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Москва</li>
+                            <li class="tab-content-list-item">Санкт-Петербург</li>
+                            <li class="tab-content-list-item">Новосибирск</li>
+                            <li class="tab-content-list-item">Екатеринбург</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-five" type="checkbox" name="tabs">
+                    <label for="tab-five">Компании грузоперевозок</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Деловые линии</li>
+                            <li class="tab-content-list-item">Байкал Сервис</li>
+                            <li class="tab-content-list-item">DHL</li>
+                            <li class="tab-content-list-item">ПЭК</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main-logo">
+
+            </div>
+        </div>
+        <div class="footer__sequr">
+            <span>
+                Все права защищены и охраняются законом
+            </span>
+            <span>
+                © 2020, Transsales — дешевые грузоперевозки
+            </span>
+        </div>
+    </footer>
     <script src="js/common.js"></script>
 </body>
 </html>
