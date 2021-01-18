@@ -1581,7 +1581,7 @@ footer {
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px; }
-  .value-calculate-elem .placeholder-ad {
+  .value-calculate-elem .placeholder-calculate-t {
     position: absolute;
     top: 50%;
     left: 6px;
@@ -1602,7 +1602,7 @@ footer {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    .value-calculate-elem .value-calculate-input:hover + .placeholder-ad, .value-calculate-elem .value-calculate-input:focus + .placeholder-ad, .value-calculate-elem .value-calculate-input:valid + .placeholder-ad {
+    .value-calculate-elem .value-calculate-input:hover + .placeholder-calculate-t, .value-calculate-elem .value-calculate-input:focus + .placeholder-calculate-t, .value-calculate-elem .value-calculate-input:valid + .placeholder-calculate-t {
       -webkit-transform: translate(-30px, calc(-100% - 8px)) scale(0.5);
           -ms-transform: translate(-30px, calc(-100% - 8px)) scale(0.5);
               transform: translate(-30px, calc(-100% - 8px)) scale(0.5); }
