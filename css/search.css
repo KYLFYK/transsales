@@ -1110,27 +1110,3 @@
 @media (min-width: 993px) {
   .main__wrapper {
     margin-top: 0; } }
-
-.value-calculate-elem {
-  position: relative; }
-  .value-calculate-elem .placeholder-ad {
-    position: absolute;
-    top: 50%;
-    left: 6px;
-    letter-spacing: 0.1em;
-    pointer-events: none;
-    color: rgba(0, 0, 0, 0.5);
-    -webkit-transform: translateY(calc(-50% - 4px));
-        -ms-transform: translateY(calc(-50% - 4px));
-            transform: translateY(calc(-50% - 4px));
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: -webkit-transform .3s ease-out;
-    -o-transition: transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-    width: 100%;
-    display: inline-block; }
-  .value-calculate-elem .value-calculate-input:hover + .placeholder-ad, .value-calculate-elem .value-calculate-input:focus + .placeholder-ad, .value-calculate-elem .value-calculate-input:valid + .placeholder-ad {
-    -webkit-transform: translate(-43px, calc(-100% - 8px)) scale(0.5);
-        -ms-transform: translate(-43px, calc(-100% - 8px)) scale(0.5);
-            transform: translate(-43px, calc(-100% - 8px)) scale(0.5); }
