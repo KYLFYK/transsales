@@ -133,6 +133,7 @@ let collectionOfsizesS = document.querySelectorAll('.value-calculate-input-s');
 let resultS = 0;
 
 resultBtnS.addEventListener('click', function(e) {
+
     e.preventDefault();
     resultS = collectionOfsizesS[0].value * collectionOfsizesS[1].value * collectionOfsizesS[2].value;
     resultS = resultS.toFixed(2);
@@ -140,4 +141,37 @@ resultBtnS.addEventListener('click', function(e) {
         resultS = Math.floor(resultS);
     }
     inputS.value = resultS;
+
+})
+
+let colOfOffers = document.querySelectorAll('.search__active__offers-elem');
+
+colOfOffers.forEach( (offer) => {
+
+    let closeInclude = offer.querySelector('.include-content-list .close')
+    let openInclude = offer.querySelector('.include-content .title')
+    let thisList = offer.querySelector('.include-content-list');
+
+
+    openInclude.addEventListener('click', function() {
+        thisList.classList.remove('closed');
+    })
+    closeInclude.addEventListener('click', function() {
+        thisList.classList.add('closed');
+    })
+
+})
+
+
+let filialList = document.querySelectorAll('.filial')
+
+filialList.forEach((filial) => {
+    let filialWrapper = filial.querySelector('.filial__wrapper')
+    filial.querySelector('.open-filial').addEventListener('click', function() {
+        document.querySelectorAll('.filial__wrapper').forEach((elem) => elem.classList.add('closed'))
+        filialWrapper.classList.remove('closed')
+    })
+    filialWrapper.querySelector('.close').addEventListener('click', function() {
+        filialWrapper.classList.add('closed')
+    })
 })

@@ -59,12 +59,12 @@ document.addEventListener('click', e => {
     }
 })
 
-let collectionOfsizes = document.querySelectorAll('.value-calculate-input');
+let collectionOfSizes = document.querySelectorAll('.value-calculate-input');
 let result = 0;
 
 resultBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    result = collectionOfsizes[0].value * collectionOfsizes[1].value * collectionOfsizes[2].value;
+    result = collectionOfSizes[0].value * collectionOfSizes[1].value * collectionOfSizes[2].value;
     result = result.toFixed(2);
     if (result % 2 === 0) {
         result = Math.floor(result);
@@ -72,12 +72,12 @@ resultBtn.addEventListener('click', function(e) {
     input.value = result;
 })
 
-let collectionOfsizesS = document.querySelectorAll('.value-calculate-input-s');
+let collectionOfSizesS = document.querySelectorAll('.value-calculate-input-s');
 let resultS = 0;
 
 resultBtnS.addEventListener('click', function(e) {
     e.preventDefault();
-    resultS = collectionOfsizesS[0].value * collectionOfsizesS[1].value * collectionOfsizesS[2].value;
+    resultS = collectionOfSizesS[0].value * collectionOfSizesS[1].value * collectionOfSizesS[2].value;
     resultS = resultS.toFixed(2);
     if (resultS % 2 === 0) {
         resultS = Math.floor(resultS);

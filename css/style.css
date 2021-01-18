@@ -363,7 +363,6 @@ body {
   .main__val-elem .value-calculate {
     position: absolute;
     padding: 18px;
-    top: -webkit-calc(100% + 6px);
     top: calc(100% + 6px);
     border-radius: 2px;
     left: 0;
@@ -445,7 +444,7 @@ body {
         padding: 24px; } }
   @media (min-width: 767px) {
     .main__val-elem {
-      -webkit-flex-basis: -webkit-calc(50% - 4px);
+      -webkit-flex-basis: calc(50% - 4px);
           -ms-flex-preferred-size: calc(50% - 4px);
               flex-basis: calc(50% - 4px);
       margin-right: 4px;
@@ -461,14 +460,14 @@ body {
         border-bottom-left-radius: 3px; } }
   @media (min-width: 993px) {
     .main__val-elem {
-      -webkit-flex-basis: -webkit-calc(25% - 20px);
+      -webkit-flex-basis: calc(25% - 20px);
           -ms-flex-preferred-size: calc(25% - 20px);
               flex-basis: calc(25% - 20px); }
       .main__val-elem .input {
         border-radius: 5px !important; } }
   @media (min-width: 1200px) {
     .main__val-elem {
-      -webkit-flex-basis: -webkit-calc(25% - 40px);
+      -webkit-flex-basis: calc(25% - 40px);
           -ms-flex-preferred-size: calc(25% - 40px);
               flex-basis: calc(25% - 40px); } }
 
@@ -813,7 +812,6 @@ body {
     background-color: #222;
     text-decoration: none;
     height: 48px;
-    width: -webkit-calc(100% - 2px);
     width: calc(100% - 2px); }
     .main__btn-elem.see-spec a span {
       display: block;
@@ -983,17 +981,17 @@ h2.title {
     .steps__item {
       margin-right: 10px;
       margin-left: 10px;
-      -webkit-flex-basis: -webkit-calc(50% - 20px);
+      -webkit-flex-basis: calc(50% - 20px);
           -ms-flex-preferred-size: calc(50% - 20px);
               flex-basis: calc(50% - 20px); } }
   @media (min-width: 993px) {
     .steps__item {
-      -webkit-flex-basis: -webkit-calc(25% - 20px);
+      -webkit-flex-basis: calc(25% - 20px);
           -ms-flex-preferred-size: calc(25% - 20px);
               flex-basis: calc(25% - 20px); } }
   @media (min-width: 1200px) {
     .steps__item {
-      -webkit-flex-basis: -webkit-calc(25% - 40px);
+      -webkit-flex-basis: calc(25% - 40px);
           -ms-flex-preferred-size: calc(25% - 40px);
               flex-basis: calc(25% - 40px);
       margin-right: 20px;
@@ -1209,7 +1207,7 @@ h2.title {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
       .specs__list-item {
-        -webkit-flex-basis: -webkit-calc(33% - 20px);
+        -webkit-flex-basis: calc(33% - 20px);
             -ms-flex-preferred-size: calc(33% - 20px);
                 flex-basis: calc(33% - 20px); }
         .specs__list-item:not(:last-of-type) {

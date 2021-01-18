@@ -66,9 +66,18 @@
                 <span class="placeholder">Объем (м<sup>3</sup>)</span>
                 <img src="ico/volume-blue.svg" alt="" class="ico">
                 <div class="value-calculate closed" id="val-popup1">
-                    <input type="number" placeholder="Длина (м)" class="value-calculate-input value-calculate-input-s">
-                    <input type="number" placeholder="Ширина (м)" class="value-calculate-input value-calculate-input-s">
-                    <input type="number" placeholder="Высота (м)" class="value-calculate-input value-calculate-input-s">
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                        <span class="placeholder-ad">Длина (м)</span>
+                    </div>
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                        <span class="placeholder-ad">Ширина (м)</span>
+                    </div>
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                        <span class="placeholder-ad">Высота (м)</span>
+                    </div>
                     <a href="#" class="value-calculate-btn" id=calcBtn1>Вычислить объем</a>
                 </div>
             </div>
@@ -346,11 +355,67 @@
                                 <span class="open-filial">
                                     Показать филиал A
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <div class="filial">
                                 <span class="open-filial">
                                     Показать филиал B
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,7 +423,8 @@
                         <div class="title">
                             Что включено в стоимость?
                         </div>
-                        <ul class="include-content-list">
+                        <ul class="include-content-list closed">
+                            <li class="close"></li>
                             <li class="include-content-list-item">
                                 <span class="title-item">Обрешетка</span>
                                 <span class="cost">800 RUB</span>
@@ -438,11 +504,67 @@
                                 <span class="open-filial">
                                     Показать филиал A
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <div class="filial">
                                 <span class="open-filial">
                                     Показать филиал B
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -450,7 +572,8 @@
                         <div class="title">
                             Что включено в стоимость?
                         </div>
-                        <ul class="include-content-list">
+                        <ul class="include-content-list closed">
+                            <li class="close"></li>
                             <li class="include-content-list-item">
                                 <span class="title-item">Обрешетка</span>
                                 <span class="cost">800 RUB</span>
@@ -527,11 +650,67 @@
                                 <span class="open-filial">
                                     Показать филиал A
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <div class="filial">
                                 <span class="open-filial">
                                     Показать филиал B
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -539,7 +718,8 @@
                         <div class="title">
                             Что включено в стоимость?
                         </div>
-                        <ul class="include-content-list">
+                        <ul class="include-content-list closed">
+                            <li class="close"></li>
                             <li class="include-content-list-item">
                                 <span class="title-item">Обрешетка</span>
                                 <span class="cost">800 RUB</span>
@@ -616,11 +796,67 @@
                                 <span class="open-filial">
                                     Показать филиал A
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <div class="filial">
                                 <span class="open-filial">
                                     Показать филиал B
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -628,7 +864,8 @@
                         <div class="title">
                             Что включено в стоимость?
                         </div>
-                        <ul class="include-content-list">
+                        <ul class="include-content-list closed">
+                            <li class="close"></li>
                             <li class="include-content-list-item">
                                 <span class="title-item">Обрешетка</span>
                                 <span class="cost">800 RUB</span>
@@ -705,11 +942,67 @@
                                 <span class="open-filial">
                                     Показать филиал A
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <div class="filial">
                                 <span class="open-filial">
                                     Показать филиал B
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -717,7 +1010,8 @@
                         <div class="title">
                             Что включено в стоимость?
                         </div>
-                        <ul class="include-content-list">
+                        <ul class="include-content-list closed">
+                            <li class="close"></li>
                             <li class="include-content-list-item">
                                 <span class="title-item">Обрешетка</span>
                                 <span class="cost">800 RUB</span>
@@ -794,11 +1088,67 @@
                                 <span class="open-filial">
                                     Показать филиал A
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <div class="filial">
                                 <span class="open-filial">
                                     Показать филиал B
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -806,7 +1156,8 @@
                         <div class="title">
                             Что включено в стоимость?
                         </div>
-                        <ul class="include-content-list">
+                        <ul class="include-content-list closed">
+                            <li class="close"></li>
                             <li class="include-content-list-item">
                                 <span class="title-item">Обрешетка</span>
                                 <span class="cost">800 RUB</span>
@@ -883,11 +1234,67 @@
                                 <span class="open-filial">
                                     Показать филиал A
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <div class="filial">
                                 <span class="open-filial">
                                     Показать филиал B
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -895,7 +1302,8 @@
                         <div class="title">
                             Что включено в стоимость?
                         </div>
-                        <ul class="include-content-list">
+                        <ul class="include-content-list closed">
+                            <li class="close"></li>
                             <li class="include-content-list-item">
                                 <span class="title-item">Обрешетка</span>
                                 <span class="cost">800 RUB</span>
@@ -972,11 +1380,67 @@
                                 <span class="open-filial">
                                     Показать филиал A
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <div class="filial">
                                 <span class="open-filial">
                                     Показать филиал B
                                 </span>
+                                <div class="filial__wrapper closed">
+                                    <div class="close"></div>
+                                    <div class="filial__info-block">
+                                        <span class="filial__info-city">
+                                            Филиал A. Екатеринбург
+                                        </span> ,
+                                        <a href="tel:+79959999999" class="filial__info-tel">+7 (955) 999 99-99</a> ,
+                                        <a href="mailto:mail@mail.ru" target="_blank" class="filial__info-email">mail@mail.ru</a>
+                                    </div>
+                                    <div class="filial__place-block">
+                                        Россия, г. Екатеринбург, ул. Ленина 66, к. 777
+                                    </div>
+                                    <table class="filial__table">
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th>СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">9:00 - 20:00</td>
+                                            <td colspan="2">9:00 - 18:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -984,7 +1448,8 @@
                         <div class="title">
                             Что включено в стоимость?
                         </div>
-                        <ul class="include-content-list">
+                        <ul class="include-content-list closed">
+                            <li class="close"></li>
                             <li class="include-content-list-item">
                                 <span class="title-item">Обрешетка</span>
                                 <span class="cost">800 RUB</span>
